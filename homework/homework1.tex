@@ -1,0 +1,120 @@
+\documentclass[12pt,largemargins]{homework}
+
+  \newcommand{\hwname}{Phillip Janowski}
+  \newcommand{\hwemail}{pajmc2@mail.umsl.edu}
+  \newcommand{\hwtype}{Homework}
+  \newcommand{\hwnum}{1}
+  \newcommand{\hwlecture}{E}
+  \newcommand{\hwsection}{01}
+  \newcommand{\hwclass}{CS2700}
+
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{listings}
+
+\date{Septemeber 6, 2018}
+\begin{document}
+\maketitle
+\normalsize
+	\question
+	2.2 Consider two different machines, with two different instruction sets, both of which
+have a clock rate of 200 MHz. The following measurements are recorded on the two
+machines running a given set of benchmark programs: \\
+	\begin{tabular}{|l|c|c|}
+		\hline
+		Instruction Type & Instruction Count (millions) & Cycles Per Instruction \\
+		\hline 
+		Machine A & & \\
+	     Arithmetic and logic & 8 & 1 \\
+	     Load and store & 4 & 3 \\
+	     Branch & 2 & 4 \\
+	     Others & 4 & 3\\
+	     \hline
+	     Machine B & & \\
+	     Arithmetic and logic & 10 & 1 \\
+	     Load and store & 8 & 2  \\
+		 Branch & 2 & 4 \\
+	     Others & 4 & 3\\
+	     \hline
+	     
+	\end{tabular}
+		\begin{alphaparts}
+
+	\item 
+	Determine the effective CPI, MIPS rate, and execution time for each machine. \\		     		Solution: \\
+	$CPU_A =\dfrac{\sum CPI_i * I_i}{I_c}$
+	$= \dfrac{(8*1 +4 *3 + 2*4 + 4*3)*10^6}{(8+4+2+4)*10^6} = 2.\overline{22}$\\
+	$MIPS_A=\dfrac{f}{CPI_A*10^6} = \dfrac{200*10^6}{2.22*10^6} = 90$ \\
+	$CPU_A=\dfrac{I_c*CPI_A}{f}=\dfrac{18*10^6*2.2}{200*10^6} =.2$ seconds\\
+	$CPI_B=\dfrac{\sum CPI_i * I_i}{I_c} 
+	= \dfrac{(10*1+8*2+2*4+4*3)*10^6}{(10+8+2+4)*10^6} = 1.91\overline{6}$ \\
+	$MIPS_B = \dfrac{f}{CPI_B*10^6} =\dfrac{200*10^6}{1.92*10^6} = 104$ \\
+	$CPU_B=\dfrac{I_c*CPI_B}{f}=\dfrac{24*10^6*1.92}{200*10^6} = .23$ seconds
+	\item 
+	Comment on the results.\\
+	Solution: \\
+	Machine B takes more CPU time to finish its benchmark even though it has a higher MIPS that Machine A
+
+	\end{alphaparts}
+\question
+2.5 The following table, based on data reported in the literature [HEAT84], shows
+the execution times, in seconds, for five different benchmark programs on three
+machines.\\
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	\multirow{2}{*}{Benchmark} & \multicolumn{3}{|c|}{Processor} \\
+	\cline{2-3}
+	& R & M & Z \\
+	\hline
+	E & 417 & 244 & 134 \\
+	\hline
+	F & 83 & 70 & 70 \\
+	\hline
+	H & 66 & 153 & 135\\
+	\hline 
+	I & 39449 & 35527 & 66000\\
+	\hline
+	K & 771 & 368 & 369 \\
+	\hline
+\end{tabular}
+\end{center}
+\begin{alphaparts}
+\item
+Compute the speed metric for each processor for each benchmark, normalized to
+machine R. That is, the ratio values for R are all 1.0. Other ratios are calculated
+using Equation (2.5) with R treated as the reference system. Then compute the
+arithmetic mean value for each system using Equation (2.3). This is the approach
+taken in [HEAT84].\\
+Solution: \\
+\begin{center}
+Arithmetic Mean $= \dfrac{1}{n} \sum_{i=1}^n x_i$ \\
+Normal to R\\
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	& R & M & Z\\
+	\hline
+	E & $417/417 = 1$ & $417/244 = 1.71$ & $417/134 = 3.11$\\
+	\hline
+	F & $83/83 = 1$ & $83/70 = 1.186$ & $80/70 = 1.186$\\
+	\hline
+	H & $66/66 = 1$ & $66/153 = .431$ & $ 66/135 = .4\overline{88}$\\
+	\hline
+	I & $ 39449/39449 = 1$ & $ 39449/35527 = 1.11$ & $39449/66000 = .598$ \\
+	\hline
+	K & $772/772 = 1$ & $772/368 = 2.098$ & $772/369=2.092$\\
+	\hline 
+	AM & 
+\end{tabular}
+\end{center}
+\item
+Repeat part (a) using M as the reference machine. This calculation was not tried in
+[HEAT84].\\
+\item
+Which machine is the slowest based on each of the preceding two calculations?\\
+\item 
+Repeat the calculations of parts (a) and (b) using the geometric mean, defined in
+Equation (2.6). Which machine is the slowest based on the two calculations?\\
+\end{alphaparts}
+\end{document}
