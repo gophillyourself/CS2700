@@ -8,11 +8,13 @@
   \newcommand{\hwsection}{01}
   \newcommand{\hwclass}{CS2700}
 
+\usepackage{graphicx}
 \usepackage{makecell}
 \usepackage{enumitem}
 \usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{listings}
+
 
 \date{Septemeber 6, 2018}
 \begin{document}
@@ -226,4 +228,55 @@ $=BB8_{16}$
 $\rightarrow244/16=15R4$\\
 $=F424_{16}$
 \end{alphaparts}
+\newpage
+\question
+10.11 Find the following differences using two's compliment arithmetic
+\begin{alphaparts}
+\item
+$111000-110011 \rightarrow 111000+001101 = 000101$
+\item
+$11001100-00101110 \rightarrow 11001100+11101110=00111010$
+\item
+$111100001111-110011110011 \rightarrow 111100001111+001100001101=001000011100$
+\item
+$11000011-111010000 \rightarrow 11000011+00011000=11011011$
+\end{alphaparts}
+\question
+10.15 23*29 in binary\\
+$23 * 29 = 667$\\
+23 = 010111, 29=011101\\
+A $\leftarrow 000000$\\
+Q $\leftarrow 011101$\\
+$Q_{-1} \leftarrow 0$\\
+M $\leftarrow 010111$\\
+-M $=101001$\\
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Count & A & Q & $Q_{-1}$ & M & Step\\
+\hline
+6 & 000000 & 011101 & 0 & 010111 & init\\
+\hline
+6 & 101001 & 011101 & 0 & 010111 & $A\leftarrow A - M$\\
+\hline
+5 & 110100 & 101110 & 1 & 010111 & shift\\
+\hline 
+5 & 001011 & 101110 & 1 & 010111 & $A\leftarrow A + M $\\
+\hline 
+4 & 000101 & 110111 & 0 & 010111 & shift\\
+\hline
+4 & 101110 & 110111 & 0 & 010111 & $A\leftarrow A-M$\\
+\hline
+3 & 110111 & 011011 & 1 & 010111 & shift\\
+\hline 
+2 & 111011 & 101101 & 1 & 010111 & shift\\
+\hline 
+1 & 010100 & 110110 & 1 & 010111 & $A\leftarrow A + M$\\
+\hline 
+0 & 001010 & 011011 & 0 & 010111 & shift\\
+\hline
+\end{tabular}\\
+\end{center}
+010111*011101 = 001010011011 = 667\\
+\includegraphics[scale=.25, angle=90]{homework1_10-15work}
 \end{document}
