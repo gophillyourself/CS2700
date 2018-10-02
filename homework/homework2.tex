@@ -23,11 +23,11 @@
 11.1
 \begin{alphaparts}
 \item
-$ABC + \overline{A} \overline{B} \overline{C}$ \\
+$ABC + \overline{A} *\overline{B} *\overline{C}$ \\
 
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $ABC$ & $\overline{ABC}$ & $ABC + \overline{A} \overline{B} \overline{C}$ \\
+$ABC$ & $\overline{A}*\overline{B}*\overline{C}$ & $ABC$ & $\overline{A} *\overline{B} *\overline{C}$ & $ABC + \overline{A} *\overline{B} *\overline{C}$ \\
 \hline
 $000$ & $111$ & $ 0 $ & $ 1$ & $ 1$ \\
 $001$ & $110$ & $ 0 $ & $ 0$ & $ 0$ \\
@@ -42,11 +42,11 @@ $111$ & $000$ & $ 0 $ & $ 0$ & $ 1$ \\
 \end{tabular}
 
 \item
-$ABC + A  \overline{B} \overline{C} + \overline{A} \overline{B} \overline{C}$ \\
+$ABC + A  \overline{B} * \overline{C} + \overline{A} * \overline{B} * \overline{C}$ \\
 
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
-$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $ABC$ & $\overline{ABC}$ & $A\overline{BC}$ & $ABC + A  \overline{B} \overline{C} + \overline{A} \overline{B} \overline{C}$ \\
+$ABC$ & $\overline{A}*\overline{B}*\overline{C}$ & $ABC$ & $A  \overline{B} * \overline{C}$ & $A * \overline{B} * \overline{C}$ & $ABC + A  \overline{B} * \overline{C} + \overline{A} * \overline{B} * \overline{C}$ \\
 \hline
 $000$ & $111$ & $ 0 $ & $ 1$ & $ 0$ & $ 1$ \\
 $001$ & $110$ & $ 0 $ & $ 0$ & $ 0$ & $ 0$\\
@@ -65,7 +65,7 @@ $A(B\overline{C} + \overline{B}C)$ \\
 
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $B\overline{C}$ & $\overline{B}C$ & $A(B\overline{C} + \overline{B}C)$ \\
+$ABC$ & $\overline{A}*\overline{B}*\overline{C}$ & $B\overline{C}$ & $\overline{B}C$ & $A(B\overline{C} + \overline{B}C)$ \\
 \hline
 $000$ & $111$ & $ 0 $ & $ 0$ & $ 0$ \\
 $001$ & $110$ & $ 0 $ & $ 1$ & $ 0$ \\
@@ -83,7 +83,7 @@ $(A+B)(A+C)(\overline{A}+\overline{B})$\\
 
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $A + B$ & $A+C$ & $\overline{A}+\overline{B}$ & $(A+B)(A+C)(\overline{A}+\overline{B})$\\
+$ABC$ & $\overline{A}*\overline{B}*\overline{C}$& $A + B$ & $A+C$ & $\overline{A}+\overline{B}$ & $(A+B)(A+C)(\overline{A}+\overline{B})$\\
 \hline
 $000$ & $111$ & $ 0 $ & $ 0$ & $ 1$ & $ 0$ \\
 $001$ & $110$ & $ 0 $ & $ 1$ & $ 1$ & $ 0$ \\
@@ -96,5 +96,61 @@ $111$ & $000$ & $ 1 $ & $ 1$ & $ 0$ & $ 0$ \\
 \hline
 
 \end{tabular}
+\end{alphaparts}
+\question 11.3
+\begin{alphaparts}
+\item
+$F=\overline{V+A+L}$
+$=\overline{V}*\overline{A}*\overline{L}$\\
+\begin{tabular}{|c|c|c|}
+\hline
+$VAL$ & $\overline{V}*\overline{A}*\overline{L}$ & $F$\\
+\hline
+$000$ & $111$ & $ 1 $ \\
+$001$ & $110$ & $ 0 $ \\
+$010$ & $101$ & $ 0 $ \\
+$011$ & $100$ & $ 0 $ \\
+$100$ & $011$ & $ 0 $ \\
+$101$ & $010$ & $ 0 $ \\
+$110$ & $001$ & $ 0 $ \\
+$111$ & $000$ & $ 0 $ \\
+\hline
+\end{tabular}
+\item
+$F=\overline{A}+\overline{B}+\overline{C}+\overline{D}$
+$=\overline{ABCD}$\\
+\begin{tabular}{|c|c|c|}
+\hline
+$ABCD$ & $\overline{A}*\overline{B}*\overline{C}*\overline{D}$ & $F$\\
+\hline
+$0000$ & $1111$ & $ 1 $ \\
+$0001$ & $1110$ & $ 0 $ \\
+$0010$ & $1101$ & $ 0 $ \\
+$0011$ & $1100$ & $ 0 $ \\
+$0100$ & $1011$ & $ 0 $ \\
+$0101$ & $1010$ & $ 0 $ \\
+$0110$ & $1001$ & $ 0 $ \\
+$0111$ & $1000$ & $ 0 $ \\
+$1000$ & $0111$ & $ 0 $ \\
+$1001$ & $0110$ & $ 0 $ \\
+$1010$ & $0101$ & $ 0 $ \\
+$1011$ & $0100$ & $ 0 $ \\
+$1100$ & $0011$ & $ 0 $ \\
+$1101$ & $0010$ & $ 0 $ \\
+$1110$ & $0001$ & $ 0 $ \\
+$1111$ & $0000$ & $ 0 $ \\
+
+\hline
+\end{tabular}
+\end{alphaparts}
+
+\question 3.3
+32 bit instruction, 8bit opcode, 24bit address\\
+\begin{alphaparts}
+\item
+$2^24=2^20*2^4=$ 1 megabyte $* 16$ = 16 megabytes of addressable memory\\
+\item
+1. 32bit instruction on a 16bit bus
+3 cycles, 1 for the address, two for the 
 \end{alphaparts}
 \end{document}
