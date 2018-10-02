@@ -1,0 +1,100 @@
+\documentclass[12pt,largemargins]{homework}
+
+  \newcommand{\hwname}{Phillip Janowski}
+  \newcommand{\hwemail}{pajmc2@mail.umsl.edu}
+  \newcommand{\hwtype}{Homework}
+  \newcommand{\hwnum}{2}
+  \newcommand{\hwlecture}{E}
+  \newcommand{\hwsection}{01}
+  \newcommand{\hwclass}{CS2700}
+
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{listings}
+
+
+\date{Septemeber 6, 2018}
+\begin{document}
+\maketitle
+\question
+11.1
+\begin{alphaparts}
+\item
+$ABC + \overline{A} \overline{B} \overline{C}$ \\
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $ABC$ & $\overline{ABC}$ & $ABC + \overline{A} \overline{B} \overline{C}$ \\
+\hline
+$000$ & $111$ & $ 0 $ & $ 1$ & $ 1$ \\
+$001$ & $110$ & $ 0 $ & $ 0$ & $ 0$ \\
+$010$ & $101$ & $ 0 $ & $ 0$ & $ 0$ \\
+$011$ & $100$ & $ 0 $ & $ 0$ & $ 0$ \\
+$100$ & $011$ & $ 0 $ & $ 0$ & $ 0$ \\
+$101$ & $010$ & $ 0 $ & $ 0$ & $ 0$ \\
+$110$ & $001$ & $ 0 $ & $ 0$ & $ 0$ \\
+$111$ & $000$ & $ 0 $ & $ 0$ & $ 1$ \\
+\hline
+
+\end{tabular}
+
+\item
+$ABC + A  \overline{B} \overline{C} + \overline{A} \overline{B} \overline{C}$ \\
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $ABC$ & $\overline{ABC}$ & $A\overline{BC}$ & $ABC + A  \overline{B} \overline{C} + \overline{A} \overline{B} \overline{C}$ \\
+\hline
+$000$ & $111$ & $ 0 $ & $ 1$ & $ 0$ & $ 1$ \\
+$001$ & $110$ & $ 0 $ & $ 0$ & $ 0$ & $ 0$\\
+$010$ & $101$ & $ 0 $ & $ 0$ & $ 0$ & $ 0$ \\
+$011$ & $100$ & $ 0 $ & $ 0$ & $ 0$ & $ 0$ \\
+$100$ & $011$ & $ 0 $ & $ 0$ & $ 1$ & $ 1$ \\
+$101$ & $010$ & $ 0 $ & $ 0$ & $ 0$ & $ 0$ \\
+$110$ & $001$ & $ 0 $ & $ 0$ & $ 0$ & $ 0$ \\
+$111$ & $000$ & $ 1 $ & $ 0$ & $ 0$ & $ 1$ \\
+\hline
+
+\end{tabular}
+\newpage
+\item
+$A(B\overline{C} + \overline{B}C)$ \\
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $B\overline{C}$ & $\overline{B}C$ & $A(B\overline{C} + \overline{B}C)$ \\
+\hline
+$000$ & $111$ & $ 0 $ & $ 0$ & $ 0$ \\
+$001$ & $110$ & $ 0 $ & $ 1$ & $ 0$ \\
+$010$ & $101$ & $ 1 $ & $ 0$ & $ 0$ \\
+$011$ & $100$ & $ 0 $ & $ 0$ & $ 0$ \\
+$100$ & $011$ & $ 0 $ & $ 0$ & $ 0$ \\
+$101$ & $010$ & $ 0 $ & $ 1$ & $ 1$ \\
+$110$ & $001$ & $ 1 $ & $ 0$ & $ 1$ \\
+$111$ & $000$ & $ 0 $ & $ 0$ & $ 0$ \\
+\hline
+
+\end{tabular}
+\item
+$(A+B)(A+C)(\overline{A}+\overline{B})$\\
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$ABC$ & $\overline{A}\overline{B}\overline{C}$ & $A + B$ & $A+C$ & $\overline{A}+\overline{B}$ & $(A+B)(A+C)(\overline{A}+\overline{B})$\\
+\hline
+$000$ & $111$ & $ 0 $ & $ 0$ & $ 1$ & $ 0$ \\
+$001$ & $110$ & $ 0 $ & $ 1$ & $ 1$ & $ 0$ \\
+$010$ & $101$ & $ 1 $ & $ 0$ & $ 1$ & $ 0$ \\
+$011$ & $100$ & $ 1 $ & $ 1$ & $ 1$ & $ 1$ \\
+$100$ & $011$ & $ 1 $ & $ 1$ & $ 1$ & $ 1$ \\
+$101$ & $010$ & $ 1 $ & $ 1$ & $ 1$ & $ 1$ \\
+$110$ & $001$ & $ 1 $ & $ 1$ & $ 0$ & $ 0$ \\
+$111$ & $000$ & $ 1 $ & $ 1$ & $ 0$ & $ 0$ \\
+\hline
+
+\end{tabular}
+\end{alphaparts}
+\end{document}
