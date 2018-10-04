@@ -150,7 +150,90 @@ $1111$ & $0000$ & $ 0 $ \\
 \item
 $2^24=2^20*2^4=$ 1 megabyte $* 16$ = 16 megabytes of addressable memory\\
 \item
-1. 32bit instruction on a 16bit bus
-3 cycles, 1 for the address, two for the 
+1. 32bit address on a 16bit bus will take 3 cycles, 1 for the address and two for the data \\
+2. 16 bit address on 16 bit bus will take 4 cycles, 2 for the address and two for data\\
+\item
+24bits for the program counter and 32 bits for the instruction register\\
+\end{alphaparts}
+\newpage
+\question
+3.7
+\begin{alphaparts}
+\item 
+A factor of 2
+\item
+50 transfers, 25 of one byte, 25 of two bytes
+75 transfers, $25 + 25 *2$
+A difference factor of 1.5
+\end{alphaparts}
+\question
+4.2 \\
+\begin{alphaparts}
+\item
+8bit tag, 14bit set, 2bit word\\
+0x1111111 $\rightarrow$ 000100010001000100010001\\
+\begin{tabular}{|c|c|c|}
+\hline
+Tag & Set & Word \\
+\hline
+00010001 & 00010001000100 & 01 \\
+\hline
+11&444&1\\
+\hline
+\end{tabular}
+
+0x666666 $\rightarrow$ 011001100110011001100110\\
+\begin{tabular}{|c|c|c|}
+\hline
+Tag & Set & Word \\
+\hline
+01100110&01100110011001&10\\
+\hline
+66&1999&2\\
+\hline
+\end{tabular}\\
+0xBBBBBB $\rightarrow$ 10111011101110111011101\\
+\begin{tabular}{|c|c|c|}
+\hline
+Tag & Set & Word \\
+\hline
+10111011&1011101110111&01\\
+\hline
+BB&2EEE&3\\
+\hline
+\end{tabular}
+\item
+22bit Tag 2bit Word\\
+0x1111111 $\rightarrow$ 000100010001000100010001\\
+\begin{tabular}{|c|c|}
+\hline
+Tag&Word\\
+\hline
+0001000100010001000100&01\\
+\hline
+44444&1\\
+\hline
+\end{tabular}\\
+0x666666 $\rightarrow$ 011001100110011001100110\\
+\begin{tabular}{|c|c|}
+\hline
+Tag&Word\\
+\hline
+0110011001100110011001&10\\
+\hline
+19999&2\\
+\hline
+\end{tabular}\\
+\newpage
+0xBBBBBB $\rightarrow$ 10111011101110111011101\\
+\begin{tabular}{|c|c|}
+\hline
+Tag&Word\\
+\hline
+101110111011101110111&01\\
+\hline
+2EEEE&3\\
+\hline
+\end{tabular}\\
 \end{alphaparts}
 \end{document}

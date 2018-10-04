@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 OCT 2018 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 OCT 2018 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -622,22 +622,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--227
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
  (./homework2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
 Package rerunfilecheck Info: File `homework2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
  )
+(\end occurred when \ifx on line 170 was incomplete)
+(\end occurred when \ifx on line 160 was incomplete)
 (\end occurred when \ifx on line 147 was incomplete)
 (\end occurred when \ifx on line 100 was incomplete)
 (\end occurred when \ifx on line 23 was incomplete) 
 Here is how much of TeX's memory you used:
- 11381 strings out of 492649
- 158183 string characters out of 6129622
+ 11388 strings out of 492649
+ 158229 string characters out of 6129622
  312175 words of memory out of 5000000
  15053 multiletter control sequences out of 15000+600000
  12042 words of font info for 44 fonts, out of 8000000 for 9000
@@ -652,10 +679,10 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts
 /type1/public/cm-super/sfrm1728.pfb>
-Output written on homework2.pdf (3 pages, 83283 bytes).
+Output written on homework2.pdf (5 pages, 88454 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 75 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -73,6 +73,31 @@ A&B&C&F&SOP\\
 \end{tabular}\\
 SOP = $\overline{A}B\overline{C} + \overline{A}BC + A\overline{B}*\overline{C} + A\overline{B}C$\\
 POS = $(A+B+C)+(A+B+\overline{C}) + (A+\overline{B}+C)+(A+\overline{B}+\overline{C}) + (\overline{A}+B+C)+(\overline{A}+B+\overline{C})+(\overline{A}+\overline{B}+C)+(\overline{A} + \overline{B}+\overline{C})$
-See notes for the rest
+See notes for the rest\\
+\item[Caching Stuff]
+A 64KB cache has 32 Byte blocks. Addresses are 32 bits. a) How many bits are used for the tag, index, and offset if the cache is direct-mapped? b) How would the address be divided if the cache were 2-way set associative instead? c) How many bits is the index for a fully associative cache. Explain your answers. \\
+\item[Solution]
+1)\\
+Number of blocks = Cache-Size/Block-Size = 64 KB / 32 Bytes = 211\\
+Number of blocks = 211  = 211\\
+Tag + index + offset = 32\\
+Tag + 11 + 5 = 32\\
+Tag = 16\\
+
+2)\\
+Number of blocks = Cache-Size/Block-Size = 64 KB / 32 Bytes = 211\\
+Number of Sets = 211 / 2 = 210\\
+Tag + Set offset + Byte offset = 32\\
+Tag + 10 + 5 = 32\\
+Tag = 17\\
+
+3) offset = log(32) = 5 bits\\
+tag = 32-5 = 27 bits\\
+
+\item[Anotha One]
+A 128 KB L1 cache has a 64 byte block size and is 4-way set-associative. How many sets does the cache have? How many bits are used for the offset, index, and tag, assuming that the CPU provides 32-bit addresses? How large is the tag array? Please show your steps. \\
+\item[Solution]
+
+\includegraphics[scale=.5]{4waymapping}
 \end{itemize}
 \end{document}
