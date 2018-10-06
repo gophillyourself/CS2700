@@ -235,5 +235,79 @@ Tag&Word\\
 2EEEE&3\\
 \hline
 \end{tabular}\\
+\item
+9 bit Tag 13 bit Set 2 bit Word\\
+0x1111111 $\rightarrow$ 000100010001000100010001\\
+\begin{tabular}{|c|c|c|}
+\hline
+Tag&Set&Word\\
+\hline
+000100010&0010001000100&01\\
+\hline
+22&444&1\\
+\hline
+\end{tabular}\\
+0x666666 $\rightarrow$ 011001100110011001100110\\
+\begin{tabular}{|c|c|c|}
+\hline
+Tag&Set&Word\\
+\hline
+011001100&1100110011001&10\\
+\hline
+CC&1999&2\\
+\hline
+\end{tabular}\\
+0xBBBBBB $\rightarrow$ 10111011101110111011101\\
+\begin{tabular}{|c|c|c|}
+\hline
+Tag&Set&Word\\
+\hline
+101110111&011101110111&01\\
+\hline
+17&EEE&3\\
+\hline
+\end{tabular}\\
+\end{alphaparts}
+\question
+4.4
+\begin{alphaparts}
+\item
+8 bit Tag 14 bit Line 2 bit Word\\
+Address length = 24 bits\\
+Number of addressable units = $2^24$ = 16MB\\
+Block Size $2^2$ = 4 words\\
+Blocks in Memory = $2^24*2^{-2}$ = 4MB\\
+Lines in Cache = $2^14$\\
+Tag Size = 8 bits\\
+\item
+22 bit Tag 2 bit Word\\
+
+\end{alphaparts}
+\question
+4.8 \\
+$2^16$ bytes $8$ byte block size 32 Lines\\
+\begin{alphaparts}
+\item
+$\log_2 8 \rightarrow 3$ bit offset\\
+$\log_2 32 \rightarrow 5$ bit line\\
+$16 - 5 -3 = 8$ bit tag\\
+\item
+\begin{tabular}{|c|c|c|c|}
+\hline
+Tag&Line&Offset&Line Number\\
+\hline
+00010001&00011&011&Line 3\\
+11000011&00110&100&Line 6\\
+11010000&00011&101&Line 3\\
+10101010&10101&010&Line 21\\
+\hline
+\end{tabular}
+\item
+00011010|00011|010\\
+will remain until address = 00011010|00011|111\\
+\item
+8 byte address $2^8 = 256$ bytes
+\\item
+Tags are used to identify items that can have the same place in the cache with two different addresses in memory\\
 \end{alphaparts}
 \end{document}
