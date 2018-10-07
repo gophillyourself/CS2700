@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.9)  5 OCT 2018 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.9)  7 OCT 2018 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -653,41 +653,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--283
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 283--291
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 291--295
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
+Underfull \hbox (badness 10000) in paragraph at lines 306--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--312
+Underfull \hbox (badness 10000) in paragraph at lines 321--324
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--327
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
  (./homework2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
 Package rerunfilecheck Info: File `homework2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
  )
-(\end occurred when \ifx on line 287 was incomplete)
+(\end occurred when \ifx on line 302 was incomplete)
 (\end occurred when \ifx on line 272 was incomplete)
 (\end occurred when \ifx on line 170 was incomplete)
 (\end occurred when \ifx on line 160 was incomplete)
@@ -695,8 +695,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
 (\end occurred when \ifx on line 100 was incomplete)
 (\end occurred when \ifx on line 23 was incomplete) 
 Here is how much of TeX's memory you used:
- 11273 strings out of 492982
- 156446 string characters out of 6134897
+ 11274 strings out of 492982
+ 156453 string characters out of 6134897
  305695 words of memory out of 5000000
  14613 multiletter control sequences out of 15000+600000
  12042 words of font info for 44 fonts, out of 8000000 for 9000
@@ -711,10 +711,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
 er/sfrm1728.pfb>
-Output written on homework2.pdf (6 pages, 100742 bytes).
+Output written on homework2.pdf (6 pages, 101680 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 28 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

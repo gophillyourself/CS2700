@@ -275,13 +275,28 @@ Tag&Set&Word\\
 8 bit Tag 14 bit Line 2 bit Word\\
 Address length = 24 bits\\
 Number of addressable units = $2^24$ = 16MB\\
-Block Size $2^2$ = 4 words\\
-Blocks in Memory = $2^24*2^{-2}$ = 4MB\\
+Block Size $2^2$ = 4\\
+Blocks in Memory = $2^24*2^{-2}$ = $2^22$\\
 Lines in Cache = $2^14$\\
 Tag Size = 8 bits\\
 \item
 22 bit Tag 2 bit Word\\
-
+Address length = 24 bits\\
+Number of addressable units = $2^24$ = 16 MB\\
+Block size = $2^2$ = 4\\
+Blocks in Memory = $2^24*2^{-2}$ = $2^22$\\
+Number of lines is undetermined because it is an associative cache\\
+Tag Size = 22 bits\\
+\item
+9 bit Tag, 14 it Cache Line, 2 bit Word Offset\\
+Address length = 24 bits\\
+Number of addressable units = $2^24$ = 16 MB\\
+Block size = $2^2$ = 4\\
+Blocks in Memory = $2^24*2^{-2}$ = $2^22$\\
+Number of lines in a set = 2 because 2 way set associative\\
+Number of sets = $2^13$\\
+Number of lines in a cache = Number of sets * Number of ways set associative = $2^14 * 2 = 2^14$\\
+Tag Size = 9 bits
 \end{alphaparts}
 \question
 4.8 \\
