@@ -1,0 +1,54 @@
+\documentclass[12pt,largemargins]{homework}
+
+  \newcommand{\hwname}{Phillip Janowski}
+  \newcommand{\hwemail}{pajmc2@mail.umsl.edu}
+  \newcommand{\hwtype}{Homework}
+  \newcommand{\hwnum}{2}
+  \newcommand{\hwlecture}{E}
+  \newcommand{\hwsection}{01}
+  \newcommand{\hwclass}{CS2700}
+
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{listings}
+
+
+
+\date{Septemeber 6, 2018}
+\begin{document}
+\maketitle
+\question
+5.10
+For the Hamming code show in Figure 5.10, show what happens when a check bit rather than a data bit is in error ?\\
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Position & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
+		\hline 
+		Bits  & D8  & D7 & D6 & D5 & C8 & D4 & D3 & D2 & C4 & D1 & C2 & C1\\
+		\hline
+		Block  & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 1\\
+		\hline
+		Codes  & & & 1010 & 1001  &  & 0111 & & & & 0011 & & \\
+		\hline 
+	\end{tabular}
+	
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Position & Code & R
+		Hamming & 1111\\
+		10 & 1010\\
+		9 & 1001\\
+		7 & 0111\\
+		3 & 0011\\
+		XOR'd & 1000\\
+		\hline
+		\end{tabesult\\
+		\hlineular}\\
+	It detects that there is an error in position 8.\\
+\end{center}
+
+\end{document}
