@@ -21,7 +21,7 @@
 \begin{document}
 \maketitle
 \question
-5.10
+5.10\\
 For the Hamming code show in Figure 5.10, show what happens when a check bit rather than a data bit is in error ?\\
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -38,7 +38,7 @@ For the Hamming code show in Figure 5.10, show what happens when a check bit rat
 	
 	\begin{tabular}{|c|c|c|}
 		\hline
-		Position & Code & R
+		Position & Code\\
 		Hamming & 1111\\
 		10 & 1010\\
 		9 & 1001\\
@@ -46,9 +46,40 @@ For the Hamming code show in Figure 5.10, show what happens when a check bit rat
 		3 & 0011\\
 		XOR'd & 1000\\
 		\hline
-		\end{tabesult\\
-		\hlineular}\\
+	\end{tabular}\\
 	It detects that there is an error in position 8.\\
 \end{center}
 
+\question
+5.13\\
+$ 2^r \geq m + r+ 1 $\\
+$ 2^r \geq 1024 + r + 1, r=10$\\
+$ 2^10 \geq 1024 + 10 + 1 $\\
+$ 1024 \geq 1024 +10 +1 $ false\\
+$ 2^11 \geq 1024 +11 +1 $\\
+$ 2048 \geq 1036 $ true \\
+A minimum of 11 check bits needed for 1024-bit Hamming code error correction
+
+\question
+6.5\\
+\begin{alphaparts}
+	\item 
+	Average Seek Time\\
+	Becuase we start at track 0 of 30,000, the most we would have to traverse is 29,999 tracks\\
+	Average track number is $ \frac{29,999}{2} = 14,999.5$\\
+	Average track seek time with a $ \frac{100 tracks}{1 ms} $\\
+	$ 14,999.5/100 = $ 149.995 ms\\
+	\item 
+	Average Rotational Latency\\
+	$ \frac{7200 rev}{minute} * \frac{Minute}{60 sec} * \frac{Second}{1000ms} = 8.33ms$\\
+	Because the average track is in the middle of any two given tracks we divide by 2\\
+	$ \frac{8.333}{2} = 4.16\overline{6} ms$\\
+	\item 
+	Transfer time per sector\\
+	$ \frac{600 sectors}{track} $ or $ \frac{600 sectors}{revolution} \rightarrow \frac{8.333ms}{revolution} * \frac{revolution}{600 track} = 0.01389 ms$\\
+	\item
+	Average Total Satisfy Time\\
+	$ 149.995 + 4.166 0.01389 = 154 ms$\\
+	
+\end{alphaparts}
 \end{document}
