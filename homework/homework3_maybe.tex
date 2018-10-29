@@ -50,44 +50,8 @@ For the Hamming code show in Figure 5.10, show what happens when a check bit rat
 	It detects that there is an error in position 8.\\
 \end{center}
 \question
-5.11
-\begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-		\hline
-		Position & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
-		\hline 
-		Bits  & D8  & D7 & D6 & D5 & C8 & D4 & D3 & D2 & C4 & D1 & C2 & C1\\
-		\hline
-		Block & 1 & 1 & 0 & 0 &   & 0 & 0 & 1 &  & 0 &  & \\
-		\hline
-		Code  & 1100 & 1011 &  &  &  &  & 0101 &  &  &  & \\
-		\hline
-		\end{tabular}
-\end{center}
-The check bits are in 8, 4, 2, and 1.\\
-Check bit 8 calculated by values in bit numbers: 12, 11, 10 and 9 \\
-$ 1 \oplus 1 \oplus 0 \oplus 0 = 0 $\\
-Check bit 4 calculated by values in bit numbers: 12, 7, 6, and 5\\
-$ 1 \oplus 0 \oplus 0 \oplus 1 = 0 $\\
-Check bit 2 calculated by values in bit numbers: 11, 10, 7, 6 and 3\\
-$ 1 \oplus 0 \oplus 0 \oplus 0 \oplus 0= 1 $\\
-Check bit 1 calculated by values in bit numbers: 11, 9, 7, 5 and 3\\
-$ 1 \oplus 0 \oplus 0 \oplus 1 \oplus 0 = 0 $\\
-Thus, the check bits are: 0 0 1 0 \\
-\question
 5.12\\
-Two check bits are wrong so the error is in the data\\
-p2 and p4 are the two wrong bits so the corrupted bit is 6\\
-00111001 should be 00011001\\
-\question
-5.13\\
-$ 2^r \geq m + r+ 1 $\\
-$ 2^r \geq 1024 + r + 1, r=10$\\
-$ 2^10 \geq 1024 + 10 + 1 $\\
-$ 1024 \geq 1024 +10 +1 $ false\\
-$ 2^11 \geq 1024 +11 +1 $\\
-$ 2048 \geq 1036 $ true \\
-A minimum of 11 check bits needed for 1024-bit Hamming code error correction\\
+A minimum of 11 check bits needed for 1024-bit Hamming code error correction
 
 \question
 6.5\\
