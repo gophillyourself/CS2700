@@ -3,7 +3,7 @@
   \newcommand{\hwname}{Phillip Janowski}
   \newcommand{\hwemail}{pajmc2@mail.umsl.edu}
   \newcommand{\hwtype}{Homework}
-  \newcommand{\hwnum}{2}
+  \newcommand{\hwnum}{3}
   \newcommand{\hwlecture}{E}
   \newcommand{\hwsection}{01}
   \newcommand{\hwclass}{CS2700}
@@ -36,7 +36,21 @@ Control, timing, processor and device communication, data buffering, and error d
 7.4
 List and briefly define three techniques for performing I/O.\\
 \begin{alphaparts}
-	\item description
+	\item Programmed I/O: data exchanged between the processor and the I/O module.
+	A program is given control of an I/O device to get its status or read, write, and transfer data.\\
+	\item Interrupt-driven I/O: processor issues the I/O command then waits for the I/O module to interrupt the processor when its ready to exchange data with the processor.\\
+	\item Direct Memory Access: Gives I/O direct access to what ever it requests through a mock processor.\\
 \end{alphaparts}
-
+\question 
+7.5
+What is the difference between memory-mapped I/O and isolated I/O?\\
+Memory mapped I/O has a single address space for memory location and I/O drives. Isolated I/O has a seperate address space from main memory.
+\question
+7.6 
+When a device interrupt occurs, how does the processor determine which device issued the interrupt?\\
+It will poll each I/O module to see which module sent the interrupt/\\
+\question 
+7.7
+When a DMA module takes control of a bus, and while it remains in control of the bus, what does the processor do?\\
+If the processor needs the bus at the time, it will be forced to suspend operation until the bus is given back up.
 \end{document}
