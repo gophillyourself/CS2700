@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 NOV 2018 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 NOV 2018 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -622,16 +622,118 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--53
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \end{alphaparts}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
  (./homework4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `homework4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  )
+(\end occurred when \ifx on line 105 was incomplete)
+(\end occurred when \ifx on line 101 was incomplete)
+(\end occurred when \ifx on line 97 was incomplete)
+(\end occurred when \ifx on line 93 was incomplete)
+(\end occurred when \ifx on line 89 was incomplete)
+(\end occurred when \ifx on line 85 was incomplete)
+(\end occurred when \ifx on line 81 was incomplete)
+(\end occurred when \ifx on line 72 was incomplete)
+(\end occurred when \ifx on line 61 was incomplete)
+(\end occurred when \ifx on line 57 was incomplete)
 (\end occurred when \ifx on line 53 was incomplete)
 (\end occurred when \ifx on line 49 was incomplete)
 (\end occurred when \ifx on line 45 was incomplete)
@@ -640,9 +742,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
 (\end occurred when \ifx on line 28 was incomplete)
 (\end occurred when \ifx on line 24 was incomplete) 
 Here is how much of TeX's memory you used:
- 11375 strings out of 492649
- 158147 string characters out of 6129622
- 300175 words of memory out of 5000000
+ 11383 strings out of 492649
+ 158195 string characters out of 6129622
+ 301175 words of memory out of 5000000
  15053 multiletter control sequences out of 15000+600000
  12042 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -652,10 +754,10 @@ mf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf
 -dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf-d
 ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on homework4.pdf (2 pages, 51426 bytes).
+Output written on homework4.pdf (4 pages, 58239 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 50 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

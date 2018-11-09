@@ -53,4 +53,55 @@ It will poll each I/O module to see which module sent the interrupt/\\
 7.7
 When a DMA module takes control of a bus, and while it remains in control of the bus, what does the processor do?\\
 If the processor needs the bus at the time, it will be forced to suspend operation until the bus is given back up.
+\question
+8.1
+What is an operating system?\\
+A program that controls other programs and interfaces between the programs and the computer's hardware.\\
+\question 
+8.2
+List and briefly define the key services provided by an OS.\\
+\begin{alphaparts}
+	\item Program Creation: Providing tools to write programs for the OS\\
+	\item Program Execution: Handling loading instructions and data into memory and initializing I/O devices\\
+	\item Access to I/O Devices: Controlling read and write access and knowing how to handle I/O devices\\
+	\item System Access: Only allowing users access to what they have writes to.\\
+	\item Error Detection: Handling errors in the least catastrophic ways possible and letting the user know about it\\
+	\item Accounting: Giving the ability to monitor hardware and system performance.\\
+\end{alphaparts}
+\question
+8.3
+List and briefly define the major types of OS Scheduling.\\ 
+\begin{alphaparts}
+Long-term scheduling: Determining which programs are given to the system to process.\\
+Meduim-term scheduling: Determining whether to add a process to main memory and if so how much of it.\\
+Short-term scheduling: Determining which job should be executed next.\\
+I/O scheduling: Deterimining which I/O request to handle.\\
+\end{alphaparts}
+\question
+8.4
+What is the difference between a process and a program.\\
+A program is usually user affected. A process is a program that will run on its own and interacts with the system.\\
+\question
+8.5
+What is the purpose of swapping?\\
+To keep memory free and accessible for processes that need it more than others.\\
+\question
+8.6
+If a process may be dynamically assigned to different location in main memory, what is implication for the addressing mechanism?\\
+To keep track of the physical and logical addresses of the process, the latter for swapping out processes.\\
+\question 
+8.7
+Is it necessary for all of the pages of a process to be in main memory while the process is executing?\\
+Only pages that contains the data the process needs to execute is necessary.\\
+\question
+8.8
+Must the pagers of a process in main memory be contiguous\\
+No\\
+\question
+8.9
+Is it necessary for the pages of a process in main memory to be in sequential order?\\
+No\\
+\question
+8.10
+It is a cache for page table entries to make memory access more efficient and to have to pull from physical memory less.
 \end{document}
